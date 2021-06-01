@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("background.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  word-wrap: break-word;
+}
+
+.container {
+  max-width: 90em;
+  width: 95%;
+  margin: 3em auto;
+  border-radius: 3em;
+}
+
+form {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.search-input {
+  border-bottom: 0.1em solid rgba(255, 255, 255, 0.8);
+  width: 22em;
+  margin: auto;
+}
+
+input[type="text"] {
+  padding: 0.5em;
+  width: 22em;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Open Sans", sans-serif;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="radio"] {
+  margin: 0.5em 1em;
+}
+
+.current-weather {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  margin-top: 4em;
+  padding: 3em;
+}
+
+.current-weather h1 {
+  font-size: 2rem;
+}
+
+.current-weather div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.current-weather i {
+  margin-right: 0.8em;
+}
+
+.weather-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.weather-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+img {
+  margin: auto;
+}
+
+.weather-description {
+  font-size: 1.4rem;
+  margin: auto;
+}
+
+.temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.temp p {
+  font-size: 3rem;
+}
+
+.temp small {
+  margin: auto;
+  text-align: center;
+}
+
+.weather-details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 4em;
+  font-size: 1.1rem;
+}
+
+.weather-details p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  margin: 1em;
+}
+
+.forecast {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  padding: 3em 0;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section {
+  min-width: 17%;
+  text-align: center;
+  margin: 2em 1em;
+}
+
+section .forecast-temp {
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
+
+.day {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.error {
+  text-align: center;
+  margin-top: 4em;
+}
+
+.error-icon {
+  margin: auto;
+  font-size: 7rem;
+}
+
+@media screen and (max-width: 480px) {
+  .location {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .forecast {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=index.css.map */
